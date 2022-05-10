@@ -13,5 +13,14 @@ import { TodoService } from './todo.service';
 })
 export class TodoModule {}
 
-
-
+@Module({
+  imports: [
+    AModule,
+    BModule
+  ],
+  exports: [
+    AModule,
+    BModule
+  ],
+})
+export class CommonModule { }

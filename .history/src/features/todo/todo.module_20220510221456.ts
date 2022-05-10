@@ -5,6 +5,7 @@ import { TodoService } from './todo.service';
 // 每个module都是单例，也就是说各模组共享同一个实例，
 // 导出TodoService实现模组间共享
 
+@Global()
 @Module({
   controllers: [TodoController],
   providers: [TodoService],
@@ -12,6 +13,3 @@ import { TodoService } from './todo.service';
   
 })
 export class TodoModule {}
-
-
-
